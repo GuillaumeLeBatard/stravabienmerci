@@ -1,0 +1,114 @@
+h1{
+  font-family: serif;         /* On se permet un changement de police : pas plus de deux par page, et à utiliser avec parcimonie (c'est le cas) */
+  color: white;               /*  Donc on utilise une police blanche pour que le texte soit visible */
+  padding: 0.3em;             /* Espacement intérieur non nul pour que le texte ne colle pas à la bordure du cadre */
+  text-align: center;         /* Le titre doit être centré ! */
+  letter-spacing: 0.3em;      /* On espace les caractères pour que ce soit joli :-) */
+  /*background-image: url("images_appli/icone_transparent.png");*/
+  /*background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;*/
+}
+h2{
+    font: 12px;
+    color: snow;
+    float: right;
+    background-color: slategray;
+    background-blend-mode: difference;
+}
+body{
+    background: url('images_appli/P1080399.jpg') no-repeat;
+    background-size: cover;
+}
+ul.contenu li{
+    list-style-image: url("images_appli/4739-200.png");
+    list-style-position: inside;
+    text-align: justify;
+    padding-left: 11em; 
+}
+p {
+    text-align: justify;   
+}              /* Justifier le texte des paragraphes et des lignes de listes */
+ul.menu li{
+    
+    list-style-type: lower-roman;
+    list-style-position: inside;
+    text-align: justify;
+    float: left;
+}
+      
+img{ 
+    position: relative;
+    margin-left: 30rem;
+    filter: invert(1);
+}
+img:hover{
+    filter: invert(0);
+    transform: scale(1.3);
+}
+
+#loading {
+    animation: rotate 4s linear infinite;
+    animation-iteration-count: 2;
+    /*animation-name: fadeInOut, moveLeft300px, bounce;
+    animation-duration: 2.5s, 5s, 1s;
+    animation-iteration-count: 2, 1, 5;*/
+}
+      
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    40% {
+        transform: rotate(90deg)
+    }
+    60% {
+        transform: rotate(270deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+  }
+  .roundedImage, .roundedImageShadow, .roundedImageBorder{
+    float:left;
+    overflow:hidden;
+	-webkit-border-radius:50px 50px 50px 50px;
+	-moz-border-radius: 50% 50% 50% 50%;
+	border-radius:10%, 10%, 10%, 10%;
+	width:100px;
+    height:100px;
+    /*clip-path: ellipse(50% 50%);*/
+}
+.roundedImageShadow{
+	-moz-box-shadow: 0px 0px 10px #343434;
+	-webkit-box-shadow: 0px 0px 10px #343434;
+	-o-box-shadow: 0px 0px 10px #343434;
+	box-shadow: 0px 0px 10px #343434;
+}
+.roundedImageBorder{
+	border: 1px solid #006699;
+}
+.bandeau_droit{
+    float:right;
+}
